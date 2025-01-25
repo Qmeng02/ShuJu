@@ -35,7 +35,7 @@ _Bool delete(node head,int index){
         head=head->next;
         if(head==NULL) return 0;
     }
-    if(head->next==NULL);
+    if(head->next==NULL) return 0;
     node tmp =head->next;
     head->next=head->next->next;
     free(tmp);
